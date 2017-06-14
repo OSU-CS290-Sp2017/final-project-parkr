@@ -160,7 +160,7 @@ sorting = function (i, j) {
     for (var k = 0; k < spaceArticles.length; k++) {
         spaceArticles[k].classList.remove('hidden');
     }  
-    for (var x = 0; x < contentID.length; x++) {
+    for (var x = 1; x < contentID.length; x++) {
         var count = allElements[x].length;
         if (x !== 2 && document.getElementById(contentID[x]).getElementsByClassName('select').length !== 0) {
             for (var y = 0; y < allElements[x].length; y++) {
@@ -241,22 +241,6 @@ window.addEventListener('DOMContentLoaded', function(event){
   }
 
 	// These are for filtering.
-  var sortingLocation1 = document.getElementById(contentID[0]).querySelectorAll("a")[0];
-  sortingLocationFunction1 = function () { var i = 0; var j = 0; sorting(i, j); };
-  sortingLocation1.addEventListener('click', sortingLocationFunction1);
-
-  var sortingLocation2 = document.getElementById(contentID[0]).querySelectorAll("a")[1];
-  sortingLocationFunction2 = function () { var i = 0; var j = 1; sorting(i, j); };
-  sortingLocation2.addEventListener('click', sortingLocationFunction2);
-
-  var sortingLocation3 = document.getElementById(contentID[0]).querySelectorAll("a")[2];
-  sortingLocationFunction3 = function () { var i = 0; var j = 2; sorting(i, j); };
-  sortingLocation3.addEventListener('click', sortingLocationFunction3);
-
-  var sortingLocation4 = document.getElementById(contentID[0]).querySelectorAll("a")[3];
-  sortingLocationFunction4 = function () { var i = 0; var j = 3; sorting(i, j); };
-  sortingLocation4.addEventListener('click', sortingLocationFunction4);
-
   var sortingDays1 = document.getElementById(contentID[1]).querySelectorAll("a")[0];
   sortingDaysFunction1 = function () { var i = 1; var j = 0; sorting(i, j); };
   sortingDays1.addEventListener('click', sortingDaysFunction1);
