@@ -105,7 +105,7 @@ function reserveButtonAction(event) {
 }
 
 function reserveCancelButtonAction(event) {
-	console.log(event.toElement.parentNode.parentNode.querySelector('.detail-address').textContent);
+	reserveSpace(event.toElement.parentNode.parentNode.querySelector('.detail-address').textContent);
 	//reserveSpace(event.toElement.parentNode.parentNode.querySelector('.detail-address').textContent);
     var cancelButton = event.toElement;
     cancelButton.classList.add('hidden');
